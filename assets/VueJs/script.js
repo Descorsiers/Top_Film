@@ -101,6 +101,8 @@ Vue.component('form-select', {
           this.toggle = true;
           this.movieOrder = this.movies.map((x) => this.poster + x.poster_path)
         })
+
+
         .catch((error) => {
           console.error(error);
         });
@@ -112,7 +114,6 @@ Vue.component('form-select', {
     },
     restart(){
       localStorage.setItem("Top",this.movieOrder);
-      localStorage.clear();
       localStorage.getItem('Top');
       location.reload();
     },

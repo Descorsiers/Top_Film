@@ -3,7 +3,7 @@
 Vue.component('form-select', {
   template: `
     <div class="container p-5">
-      <h1 class="text-center p-3" v-if="!end">Tier list de film</h1>
+      <h1 class="text-center p-3" v-if="!end">Classement des films</h1>
       <h2 class="text-center p-3 h1" v-if="end">Votre top 10</h2>
         <select class="form-select" aria-label="Default select example" @change='top_movies' v-if="!end">
             <option selected disabled>CHOIX GENRE</option>
